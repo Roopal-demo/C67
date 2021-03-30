@@ -1,0 +1,265 @@
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~
+$ pwd
+/c/Users/ROOPS
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~
+$ ls
+ __pycache__/
+'3D Objects'/
+ Anaconda3/
+ AnalyzeDepressionNew.py
+ AppData/
+'Application Data'@
+ BookSanta/
+ C74_lazyloading/
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Dropbox/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ mystory3/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{37f5858e-859a-11eb-81ab-bc2db8216f30}.TM.blf
+ NTUSER.DAT{37f5858e-859a-11eb-81ab-bc2db8216f30}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{37f5858e-859a-11eb-81ab-bc2db8216f30}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ tempc71/
+ Templates@
+ Untitled.ipynb
+ Untitled1.ipynb
+ Untitled10.ipynb
+ Untitled11.ipynb
+ Untitled12.ipynb
+ Untitled13.ipynb
+ Untitled2.ipynb
+ Untitled3.ipynb
+ Untitled4.ipynb
+ Untitled5.ipynb
+ Untitled6.ipynb
+ Untitled7.ipynb
+ Untitled8.ipynb
+ Untitled9.ipynb
+ Videos/
+ weather/
+ will/
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~
+$ cd Downloads
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads
+$ cd ..
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~
+$ cd Downloads
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads
+$ mkdir myStory
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads
+$ cd myStory/
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory
+$ git init
+Initialized empty Git repository in C:/Users/ROOPS/Downloads/myStory/.git/
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Characters
+        Story
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git add Characters
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git add Story
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git commit -m "Added character and story"
+[master (root-commit) 0645ca1] Added character and story
+ 2 files changed, 4 insertions(+)
+ create mode 100644 Characters
+ create mode 100644 Story
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git add Characters
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git add Story
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git diff --staged
+diff --git a/Characters b/Characters
+index de60f89..622a690 100644
+--- a/Characters
++++ b/Characters
+@@ -1,2 +1,3 @@
+ crow
+ pot
++stone
+\ No newline at end of file
+diff --git a/Story b/Story
+index 33c59f9..088380c 100644
+--- a/Story
++++ b/Story
+@@ -1,2 +1,5 @@
+ There was a thirsty crow and he was looking for water.
+-he found some water in the pot, but the water was very less.
+\ No newline at end of file
++he found some water in the pot, but the water was very less.
++then he saw some stones nearby
++he put hte stones in the pot & the water came up
++he drank the water
+\ No newline at end of file
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git commit -m "Added new story plot"
+[master 86de824] Added new story plot
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git log
+commit 86de8240c2c9c964471e87f2e2bf9eab6edd0af0 (HEAD -> master)
+Author: Roopal <roopal.mamtora@gmail.com>
+Date:   Tue Mar 30 17:20:18 2021 +0530
+
+    Added new story plot
+
+commit 0645ca1e27482793bd0a6f879f6dd24cf393be37
+Author: Roopal <roopal.mamtora@gmail.com>
+Date:   Tue Mar 30 17:14:33 2021 +0530
+
+    Added character and story
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (master)
+$ git checkout 0645c
+Note: switching to '0645c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0645ca1 Added character and story
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory ((0645ca1...))
+$ git branch "FlippedStory"
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory ((0645ca1...))
+$ git branch
+* (HEAD detached at 0645ca1)
+  FlippedStory
+  master
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory ((0645ca1...))
+$ git checkout FlippedStory
+Switched to branch 'FlippedStory'
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory)
+$ git add Story
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory)
+$ git commit -m "this is a flipped story"
+[FlippedStory 3fa4cdd] this is a flipped story
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory)
+$ git diff master FlippedStory
+diff --git a/Characters b/Characters
+index 622a690..de60f89 100644
+--- a/Characters
++++ b/Characters
+@@ -1,3 +1,2 @@
+ crow
+ pot
+-stone
+\ No newline at end of file
+diff --git a/Story b/Story
+index 088380c..e95bad1 100644
+--- a/Story
++++ b/Story
+@@ -1,5 +1,5 @@
+ There was a thirsty crow and he was looking for water.
+ he found some water in the pot, but the water was very less.
+-then he saw some stones nearby
+-he put hte stones in the pot & the water came up
+-he drank the water
+\ No newline at end of file
++he tried to find an idea.
++but then he saw another pot with lot of water.
++so he drank water from theother pot.
+      0 [sig] bash 1924! sigpacket::process: Suppressing signal 18 to win32 process (pid 0)
+
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory)
+$ git remote add origin https://github.com/Roopal-demo/c67_soham.git
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 674 bytes | 337.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Roopal-demo/c67_soham.git
+ * [new branch]      master -> master
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 674 bytes | 84.00 KiB/s, done.
+From https://github.com/Roopal-demo/c67_soham
+ * branch            master     -> FETCH_HEAD
+   86de824..560769b  master     -> origin/master
+Auto-merging Story
+CONFLICT (content): Merge conflict in Story
+Automatic merge failed; fix conflicts and then commit the result.
+
+ROOPS@LAPTOP-LGBLT8VT MINGW64 ~/Downloads/myStory (FlippedStory|MERGING)
+$
